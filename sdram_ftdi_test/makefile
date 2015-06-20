@@ -1,8 +1,6 @@
 PROJECT=fpga
 PART=xc6slx9-ftg256-3
 
-TOOL_PATH ?= /opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64
- 
 all: ${PROJECT}_routed.bit
 
 project/${PROJECT}.prj:
