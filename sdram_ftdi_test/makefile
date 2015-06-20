@@ -8,9 +8,9 @@ all: ${PROJECT}_routed.bit
 project/${PROJECT}.prj:
 	mkdir -p project
 	echo "verilog work \"../top.v\"" > project/${PROJECT}.prj
-	echo "verilog work \"../ftdi_if.v\"" >> project/${PROJECT}.prj
-	echo "verilog work \"../ftdi_sync.v\"" >> project/${PROJECT}.prj
-	echo "verilog work \"../sdram.v\"" >> project/${PROJECT}.prj
+	echo "verilog work \"../cores/ftdi_async_bridge/rtl/ftdi_if.v\"" >> project/${PROJECT}.prj
+	echo "verilog work \"../cores/ftdi_async_bridge/rtl/ftdi_sync.v\"" >> project/${PROJECT}.prj
+	echo "verilog work \"../cores/sdram/rtl/sdram.v\"" >> project/${PROJECT}.prj
 	echo "vhdl work \"../clk_50_100.vhd\"" >> project/${PROJECT}.prj
 
 ${PROJECT}.ngc: project/${PROJECT}.prj	

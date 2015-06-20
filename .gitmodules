@@ -1,0 +1,3 @@
+[submodule "sdram_ftdi_test/cores"]
+	path = sdram_ftdi_test/cores
+	url = https://github.com/ultraembedded/cores
